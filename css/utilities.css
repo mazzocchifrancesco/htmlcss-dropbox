@@ -18,7 +18,9 @@
 .flex-align-center { align-content: center; }
 .flex-end {justify-content: end;}
 .flex-baseline {vertical-align: baseline;}
-.flex-align-around { align-content: space-around; }
+.flex-align-around { align-content: space-around;}
+.flex-wrap { flex-wrap: wrap;} 
+
 
 
 .clearfix::after {
@@ -154,6 +156,8 @@
 .h-18 {height: 18px;}
 .mh-500 {min-height: 500px;}
 .mh-200 {min-height: 200px;}
+.mh-100 {min-height: 100px;}
+
 
 
 .h-100 {height: 100%;}
