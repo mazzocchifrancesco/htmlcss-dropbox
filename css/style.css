@@ -28,5 +28,16 @@ h1 {
 }
 #partner { margin: 150px auto 150px auto;}
 #business-op { margin: 150px auto 150px auto;}
+
+/* clienti business  */
+
 #clienti { margin: 150px auto 150px auto;}
+#container-loghi {margin-top: 150px;}
+
+.colonna-loghi div {
+    height: calc(100%/2);
+    width: calc(100%/2);
+    background-color: blueviolet;
+    border: dashed black 2px;
+}
 
