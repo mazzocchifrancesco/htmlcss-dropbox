@@ -13,33 +13,35 @@
 </head>
 <body>
     <header>
+
         <!-- NAVBAR -->
         <nav class="d-flex flex-justify-between">
             <!-- CONTAINER "SEPARATORE" SX -->
-            <div class="d-flex flex-justify-between">
+            <div class="d-flex flex-justify-between flex-items-center">
                 <!-- CARD LINK  -->
-                <a href=""><div id="logo">logo</div></a>
-                <a href=""><div>Lorem</div></a>
-                <a href=""><div>Lorem</div></a>
-                <a href=""><div>Lorem</div></a>
+                <a href="#"><img src="img/logo-small.png" alt=""></a>
+                <a href="#"><div>Perché Dropbox</div></a>
+                <a href="#"><div>Funzioni</div></a>
+                <a href="#"><div>Piani e Prezzi</div></a>
             </div>
             <!-- CONTAINER "SEPARATORE" DX -->
-            <div class="d-flex flex-justify-between">
+            <div class="d-flex flex-justify-between flex-items-center">
                 <!-- CARD LINK  -->
-                <a href=""><div>Lorem</div></a>
-                <a href=""><div>Lorem</div></a>
-                <a href=""><div>Lorem</div></a>
-                <a href=""><div class="blue-button">Lorem</div>
+                <a href="#"><div>Supporto</div></a>
+                <a href="#"><div>Contatta l'ufficio vendite</div></a>
+                <a href="#"><div>Accedi</div></a>
+                <a href="#"><div class="blue-button">Inizia</div>
                 </a>
             </div>
         </nav>
     </header>
     <main>
+
        <!-- JUMBOTRON  -->
        <div id="jumbotron">
-            <h1 class="w-75 bg-violet">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="bg-violet">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <!-- container text + pic -->
-            <div class="d-flex w-75">
+            <div id="container-tex-pic" class="d-flex">
                 <!-- testo container  -->
                 <div class="bg-red w-40 d-flex flex-column">
                     <!-- testo + bottoni  -->
@@ -48,17 +50,19 @@
                         <div class="mb-10 border-dash">Annulla</div>
                 </div>
                 <!-- immagine  -->
-                <div class="bg-forestgreen w-60"></div>
+                <div class="bg-forestgreen w-60">
+                    <img src="img/jumbo.png" alt="">
+                </div>
             </div>
        </div>
 
        <!--SEZIONE SCEGLI PIANO -->
        <section id="scegli-piano">
-            <h2 class="w-66 bg-pink">Trova il piano business che fa per te</h2>
+            <h2 class="bg-pink">Trova il piano business che fa per te</h2>
             <!-- checkbox -->
-            <div class="w-66 bg-red"> checkbox</div>
+            <div class="bg-red"> checkbox</div>
             <!--contenitore schede piano  -->
-            <div class="py-50 w-66 bg-goldenrod d-flex flex-justify-between">
+            <div class="py-50 bg-goldenrod d-flex flex-justify-between">
                 <!-- colonna #1 -->
                 <div class="w-30 bg-lightblue mh-500 d-flex flex-column">
                     <div class="border-dash">lorem</div>
@@ -91,7 +95,7 @@
                 </div>
             </div>
             <!-- enterprise  -->
-            <div class="w-66 bg-red mh-200">
+            <div id="enterprise" class="bg-red mh-200">
                 <div class="border-dash text-center">ENTERPRISE</div>
                 <!-- doppia colonna -->
                 <div class="d-flex flex-justify-between">
@@ -109,7 +113,7 @@
             </div>
        </section>
        <!-- SEZIONE TROVA PARTNER -->
-       <section id="partner" class="d-flex w-66">
+       <section id="partner" class="d-flex">
             <!-- immagine  -->
             <div class="w-60 bg-red mh-500"></div>
             <!-- testo  -->
@@ -121,7 +125,7 @@
        </section>
 
        <!-- SEZIONE OPERAZIONI BUSINESS  -->
-       <section id="business-op" class="w-66">
+       <section id="business-op" class="">
             <h2>Esegui più operazioni con Dropbox Business</h2>
             <!-- contenitore schede operazioni  -->
             <div class="d-flex flex-wrap flex-justify-between">
@@ -166,7 +170,7 @@
 
        <!-- clienti esistenti -->
        <section id="clienti">
-            <div class="w-66 m-auto">
+            <div id="scopri-clienti" class=" m-auto">
                 <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
                 <a href="">scopri di più sui nostri clienti</a>
             </div>
@@ -196,7 +200,7 @@
             </div>
             <!-- inizia la prova gratuita  -->
             <div class="bg-lightblue">
-                <div class="d-flex w-66 m-auto py-50">
+                <div id="prova-gratuita" class="d-flex m-auto py-50">
                     <div class="w-60 mh-200">PORTA DROPBOX NELLA TUA AZIENDA</div>
                     <div class="w-40">inizia la prova gratuita</div>
 
@@ -205,7 +209,7 @@
        </section>
 
        <!-- DOMANDE FREQUENTI -->
-       <section id="faq" class="w-66 m-auto bg-orangered">
+       <section id="faq" class=" m-auto bg-orangered">
             <h3>domande frequenti</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nisi?</p>
@@ -219,7 +223,7 @@
     <!-- FOOTER -->
     <footer class="bg-black mh-500">
         <!-- contenitore colonne  -->
-        <div id="column-container" class="d-flex w-75 flex-justify-between m-auto">
+        <div id="column-container" class="d-flex flex-justify-between m-auto">
             <div class="footer-column d-flex flex-column">
                 <h4>Dropbox</h4>
                 <p>Lorem, ipsum.</p>
@@ -256,10 +260,10 @@
                 <p>Lorem, ipsum.</p>
             </div>
         </div>
-        <div class="w-75 m-auto">
+        <div id="small-hr-container" class="m-auto">
             <hr id="small-hr">
         </div>
-        <div class="w-75 m-auto c-white">
+        <div id="lang-container" class="m-auto c-white">
             X Italiano X
         </div>
     </footer>

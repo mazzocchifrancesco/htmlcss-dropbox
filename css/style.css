@@ -1,38 +1,85 @@
 body {font-family: 'Open Sans', sans-serif;}
+:root {
+    --main-column: 60%;
+    --larger-column: 70%;
+}
+.blue-button {
+    background-color: #0061ff;
+    padding: 5px 15px;
+    color: #ffffff;
+}
+
+/* NAVBAR */
+
 nav {
-    background-color: grey;
-    padding: 15px 0;
+    background-color: #ffffff;
+    padding: 25px 10px;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 999;
 }
-nav > div > a > div  {
-    background-color: aqua;
-    padding: 0 8px;
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+    padding: 5px 8px;
 }
-#jumbotron > div > div {min-height: 300px;}
+nav img {
+    margin-right: 15px;
+}
+
+/* JUMBOTRON */
+
+#jumbotron img {
+    width: 100%;
+    transform: translateY(80px)
+}
 #jumbotron > div {margin: auto}
+#container-tex-pic {
+    width: var(--larger-column);
+}
 #jumbotron {
-    padding-top: 100px;
-    background-color: rgb(142, 222, 222);
+    padding-top: 200px;
+    background-color: #b4d0e7;
+
+    margin: auto;
 }
 h1 {
     margin: auto;
-    text-align: center;
-    padding: 30px 0;
     font-size: 5em;
+    width: var(--larger-column);
 }
+
+/* SCEGLI PIANO */
 #scegli-piano {margin-top: 100px;}
 #scegli-piano > * {
+    width: var(--main-column);
     margin: 0 auto 30px auto;
 }
-#partner { margin: 150px auto 150px auto;}
-#business-op { margin: 150px auto 150px auto;}
+#enterprise {
+    width:var(--main-column) ;
+}
+#partner { 
+    margin: 150px auto 150px auto;
+    width:var(--main-column) ;}
+#business-op {
+    margin: 150px auto 150px auto;
+    width: var(--main-column);
+
+}
 
 /* clienti business  */
 
-#clienti { margin: 150px auto 150px auto;}
-#container-loghi {margin-top: 150px;}
+#clienti {
+    margin: 150px auto 150px auto;
+}
+#scopri-clienti {
+    width: var(--main-column);
+}
+#container-loghi {
+    margin-top: 150px;
+}
 
 .colonna-loghi div {
     height: calc(100%/2);
@@ -41,24 +88,37 @@ h1 {
     border: dashed black 2px;
 }
 
+/* PROVA GRATUITA  */
+#prova-gratuita {
+    width: var(--main-column);
+}
 /* FAQ */
 
 #faq > p {
     padding: 20px 0;
 }
 #faq h3 { padding-bottom: 30px;}
-#faq {margin-bottom: 150px;}
+#faq {
+    margin-bottom: 150px;
+    width: var(--main-column);    
+}
 
 /* FOOTER  */
 #column-container {
     padding: 50px 0;
+    width: var(--larger-column);
 }
 .footer-column {
     width: calc(100%/5 - 20px);
     background-color: chartreuse;
     min-height: 300px;
 }
-
+#small-hr-container {
+    width: var(--larger-column);
+}
 #small-hr {
     width: 150px;
+}
+#lang-container {
+    width: var(--larger-column);
 }
