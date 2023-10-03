@@ -19,6 +19,16 @@ body {font-family: 'Open Sans', sans-serif;}
     text-decoration: none;
 }
 
+.white-button {
+    background-color: #ffffff;
+    padding: 5px 15px;
+    color: black;
+    border: #000000 solid 1px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
 /* NAVBAR */
 
 nav {
