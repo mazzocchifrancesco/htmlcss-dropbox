@@ -124,12 +124,19 @@ h1 {
     margin-top: 150px;
 }
 
-.colonna-loghi div {
-    height: calc(100%/2);
-    width: calc(100%/2);
-    background-color: blueviolet;
-    border: dashed black 2px;
+/* colori loghi  */
+
+#designit {
+    background-color: #a2d39b;
+    border: #d1e9cd solid 10px;
 }
+#arizona {background-color: #61082b;}
+#florida {background-color: #0093ce;}
+#topps {background-color: #ff1c1c;}
+#world-bicycle-relief {background-color: #d5001f;}
+#hearst-corp {background-color: #b4d0e7;}
+#lonely-planet {background-color: #0d2481;}
+#clear-channel {background-color: #ffd830;}
 
 /* PROVA GRATUITA  */
 #prova-gratuita {
