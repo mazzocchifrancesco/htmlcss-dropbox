@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -38,80 +38,136 @@
     <main>
 
        <!-- JUMBOTRON  -->
-       <div id="jumbotron">
-            <h1 class="bg-violet">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+       <section id="jumbotron" class="">
+       <div id="jumbo-container" class="ps-relative">
+            <h1 class="">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <!-- container text + pic -->
             <div id="container-tex-pic" class="d-flex">
                 <!-- testo container  -->
-                <div class="bg-red w-40 d-flex flex-column">
+                <div class=" w-40 d-flex flex-column">
                     <!-- testo + bottoni  -->
-                    <p class="mb-10 border-dash">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vel distinctio totam, quam unde deleniti magni architecto, doloribus beatae rem ratione officiis blanditiis perspiciatis quas nihil consequuntur aperiam harum quia.</p>
-                    <a href=""><div class="blue-button">Lorem</div></a>
-                        <div class="mb-10 border-dash">Annulla</div>
+                    <p class="mb-20">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                    <a class="mb-20" href=""><div class="blue-button">Inizia la tua prova gratuita</div></a>
+                    <p class="mb-20">Annulla in qualsiasi momento</p>
                 </div>
                 <!-- immagine  -->
-                <div class="bg-forestgreen w-60">
+                <div class="w-60">
                     <img src="img/jumbo.png" alt="">
                 </div>
-            </div>
-       </div>
+            </div>  
+            <div id="arrow">
+                <i class="fas fa-arrow-down fa-3x "></i>
+            </div> 
+        </div>
 
+
+       </section>
        <!--SEZIONE SCEGLI PIANO -->
        <section id="scegli-piano">
-            <h2 class="bg-pink">Trova il piano business che fa per te</h2>
+            <h2 class="mb-64">Trova il piano business che fa per te</h2>
+
             <!-- checkbox -->
-            <div class="bg-red"> checkbox</div>
+            <div>
+                <input type="radio" name="linguaggio" value="month" checked="checked"/><span>Fatturazione mensile</span>
+                <input type="radio" name="linguaggio" value="year"/><span> Fatturazione annuale </span>
+            </div>
+
             <!--contenitore schede piano  -->
-            <div class="py-50 bg-goldenrod d-flex flex-justify-between">
+            <div id="" class=" d-flex flex-justify-between my-64">
                 <!-- colonna #1 -->
-                <div class="w-30 bg-lightblue mh-500 d-flex flex-column">
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
+                <div class="border-lightgrey w-30 d-flex flex-column">
+                    <!-- titolo  -->
+                    <p class="border-lightgrey text-center p-6"><i class="fa-solid fa-user"></i>Singolo</p>
+                    <!-- container corpo  -->
+                    <div class=" d-flex flex-column container-scheda">
+                        <p class="we-700 fsize-24 pb-16">Professional</p>
+                        <div class="we-700 pb-6">&euro; 12.00</div>
+                        <p class="mese c-grey pb-50">/mese</p>
+                        <div class="d-flex pb-16">
+                            <i class="fa-solid fa-user"></i><p class="">1 Utente</p>
+                        </div>    
+                        <div class="d-flex pb-16">
+                            <i class="fas fa-folder"></i><p class="lh-130">5 TB di spazio di archiviazione sicuro</p>
+                        </div>
+                        <div class="d-flex pb-16">
+                            <i class="fas fa-share-nodes"></i><p class="lh-130">Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        </div>
+                        <div class="blue-button my-35">prova gratis per 30 giorni</div>
+                        <p class="">oppure <a href="#">acquista ora</a></p>
+                        <hr class="my-35 w-20">
+                        <p class="we-700 pb-35">Punti salienti del piano</p>
+                        <div class="d-flex pb-16">
+                            <i class="fas fa-check lh-100 c-blue we-700"></i><p class="lh-100">Invia file fino a 100 GB con Dropbox Transfert</p>
+                        </div> 
+                        <div class="d-flex pb-16">
+                            <i class="fas fa-check lh-100 c-blue we-700"></i><p class="lh-100">Cartelle offline su dispositivi mobili</p>
+                        </div> 
+
+                    </div>
                 </div>
+
                 <!-- colonna #2 -->
-                <div class="w-30 bg-lightblue mh-500 d-flex flex-column">
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
+                <div class="plans-column w-30 mh-500 d-flex flex-column">
+                    <!-- titolo  -->
+                    <p class="border-lightgrey text-center"><i class="fas fa-solid fa-users"></i>Team</p>
+                    <!-- container corpo  -->
+                    <div class=" d-flex flex-column  p-25">
+                        <p class="we-700 fsize-24">Advanced</p>
+                        <div class="we-700">&euro; 18.00</div>
+                        <p class="mese c-grey">/mese/utente</p>
+                        <p class=""><i class="fa-solid fa-user"></i>1 Utente</p>
+                        <div class="d-flex">
+                            <i class="fas fa-folder"></i><p class="">Tutto lo spazio di cui ha bisogno il tuo team</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-share-nodes"></i><p class="">Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</p>
+                         </div>
+                         <div class="blue-button">prova gratis per 30 giorni</div>
+                         <p class="">lorem</p>
+                    </div>
                 </div>
+
                 <!-- colonna #3 -->
-                <div class="w-30 bg-lightblue mh-500 d-flex flex-column">
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
-                    <div class="border-dash">lorem</div>
+                <div class="plans-column w-30 mh-500 d-flex flex-column">
+                    <!-- titolo  -->
+                    <p class="border-lightgrey text-center"><i class="fa-solid fa-building"></i>azienda</p>
+                    <!-- container corpo  -->
+                    <div class=" d-flex flex-column  p-25">
+                        <p class="we-700 fsize-24">Enterprise</p>
+                        <div class="we-700">Contattaci</div>
+                        <p class="mese c-grey">-</p>
+                        <p class=""><i class="fa-solid fa-user"></i>1 Utente</p>
+                        <div class="d-flex">
+                            <i class="fas fa-folder"></i><p class="">Soluzioni personalizzabili per la tua azienda</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-share-nodes"></i><p class="">assistenza personalizzata per  aiutare gli amministratori in una gestione su lunga scala</p>
+                        </div>
+                        <div class="blue-button">prova gratis per 30 giorni</div>
+                        <p class="">lorem</p>
+                    </div>
                 </div>
             </div>
+
+
             <!-- enterprise  -->
-            <div id="enterprise" class="bg-red mh-200">
-                <div class="border-dash text-center">ENTERPRISE</div>
-                <!-- doppia colonna -->
-                <div class="d-flex flex-justify-between">
+            <div class="border-lightgrey">
+                <p class="border-lightgrey text-center p-6"><i class="fa-solid fa-building"></i>Team</p>                <!-- doppia colonna -->
+                <div class="d-flex flex-justify-between container-scheda">
                     <!-- colonna #1 -->
-                    <div>
-                        <p class="border-dash">lorem</p>
-                        <p class="border-dash">lorem</p>
-                        <p class="border-dash">lorem</p>
+                    <div class="w-70">
+                        <p class="fsize-24 we-700 py-16">Enterprise</p>
+                        <p class="we-700 pb-50">Contatta l'ufficio vendite per i prezzi</p>
+                        <p class="">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
                     </div>
                     <!-- colonna #2 -->
-                    <div>
-                        <p class="border-dash">lorem</p>
+                    <div class="w-30 text-right my-16">
+                        <a class="blue-button" href="#">Contatta l'ufficio vendite</a>
                     </div>
                 </div>
             </div>
        </section>
+
        <!-- SEZIONE TROVA PARTNER -->
        <section id="partner" class="d-flex">
             <!-- immagine  -->
