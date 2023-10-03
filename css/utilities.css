@@ -18,6 +18,7 @@
 .flex-align-center { align-content: center; }
 .flex-items-center {align-items: center;}
 .flex-end {justify-content: end;}
+.flex-start {justify-content: start;}
 .flex-baseline {vertical-align: baseline;}
 .flex-align-around { align-content: space-around;}
 .flex-wrap { flex-wrap: wrap;} 
@@ -123,6 +124,7 @@
 /*** DIMENSIONE TESTO ***/
 .fsize-12 {font-size: 12px;}
 .fsize-14 {font-size: 14px;}
+.fsize-16 {font-size: 16px;}
 .fsize-17 {font-size: 17px;}
 .fsize-20 {font-size: 20px;}
 .fsize-22 {font-size: 22px;}
