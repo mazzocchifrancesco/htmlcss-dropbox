@@ -3,7 +3,7 @@
 	padding: 0;
 	margin: 0;
 }
-/*** FLEX ***/
+/*** DISPLAY ***/
 
 .d-none {display: none;}
 .d-inblock {display: inline-block;}
@@ -49,15 +49,14 @@
 /*** PADDINGS ***/
 
 .pp-25 {padding: 25%;}
+
 .pr-2 {padding-right: 2px;}
 .p-4 { padding: 4px; }
-
 .py-6 { padding: 6px 0; }
 .p-6 { padding: 6px; }
 .px-6 { padding: 0 6px; }
 .py-6 { padding: 6px 0; }
 .pb-6 { padding-bottom: 6px; }
-
 
 .p-16 { padding: 16px; }
 .pt-16 { padding-top: 16px; }
@@ -66,6 +65,9 @@
 .pl-16 { padding-left: 16px; }
 .py-16 { padding: 16px 0; }
 .px-16 { padding: 0 16px; }
+
+.py-20 { padding: 20px 0; }
+
 
 .p-25 { padding: 25px; }
 .p-35 { padding: 35px; }

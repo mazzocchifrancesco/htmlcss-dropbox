@@ -156,13 +156,9 @@ h1 {
 }
 /* FAQ */
 
-#faq > p {
-    padding: 20px 0;
-}
 #faq h3 { padding-bottom: 30px;}
 #faq {
-    margin-bottom: 150px;
-    width: var(--main-column);    
+    margin-bottom: 150px;   
 }
 
 /* FOOTER  */
