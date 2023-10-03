@@ -8,7 +8,12 @@ body {font-family: 'Open Sans', sans-serif;}
     --padding-schede: 25px;
 }
 
-/* BOTTONE  */
+/* classi variabili */
+
+.main-column {width: var(--main-column);}
+.larger-column {width: var(--larger-column);}
+
+/* BOTTONI  */
 
 .blue-button {
     background-color: #0061ff;
@@ -22,7 +27,6 @@ body {font-family: 'Open Sans', sans-serif;}
 .white-button {
     background-color: #ffffff;
     padding: 5px 15px;
-    color: black;
     border: #000000 solid 1px;
     display: inline-block;
     text-align: center;
@@ -139,8 +143,16 @@ h1 {
 #clear-channel {background-color: #ffd830;}
 
 /* PROVA GRATUITA  */
-#prova-gratuita {
-    width: var(--main-column);
+#banner-free h3 {
+    color: #61082b;
+}
+#banner-free {background-color: #b4d0e7;}
+#banner-free a {
+    background-color: whitesmoke;
+    padding: 5px 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
 /* FAQ */
 
