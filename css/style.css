@@ -162,21 +162,16 @@ h1 {
 }
 
 /* FOOTER  */
-#column-container {
-    padding: 50px 0;
-    width: var(--larger-column);
+#column-container p {
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 12px;
 }
+
 .footer-column {
     width: calc(100%/5 - 20px);
-    background-color: chartreuse;
-    min-height: 300px;
 }
-#small-hr-container {
-    width: var(--larger-column);
-}
+
 #small-hr {
     width: 150px;
-}
-#lang-container {
-    width: var(--larger-column);
 }
