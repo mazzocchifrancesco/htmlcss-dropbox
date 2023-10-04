@@ -1,4 +1,5 @@
-body {font-family: 'Open Sans', sans-serif;}
+body {
+    font-family: 'Open Sans', sans-serif;}
 
 /* VARIABILI  */
 
@@ -14,6 +15,22 @@ body {font-family: 'Open Sans', sans-serif;}
 .main-column {width: var(--main-column);}
 .larger-column {width: var(--larger-column);}
 .p-scheda  {padding: var(--padding-schede);}
+
+/* generiche */
+
+h1 {
+      font-size: 5em;
+      font-weight: 800;
+    }
+h2 { font-size: 3em;}
+h3 { 
+    font-size: 2em;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
 
 /* BOTTONI  */
 
@@ -40,9 +57,7 @@ body {font-family: 'Open Sans', sans-serif;}
 .blue-button:hover {background-color: #4084f3;}
 .white-button:hover {color: gray;}
 
-
-
-/* NAVBAR */
+/********** NAVBAR **********/
 
 nav {
     background-color: #ffffff;
@@ -53,90 +68,48 @@ nav {
     z-index: 999;
     height: 5em;
     }
+
+    /* hover navbar */
 nav a {    border-bottom: #00000000 solid 2px;}
-nav a:hover {
-     /* border-bottom: solid grey 2px; */
-    border-bottom: #000000 solid 2px;    }
+nav a:hover {    border-bottom: #000000 solid 2px;    }
+
 nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: grey;
     font-weight: 600;
-    padding: 0 8px;
-    height: 100%;
-}
-nav img {
-    margin-right: 15px;
+    padding: 0 10px;
 }
 
-/* JUMBOTRON */
+/********** JUMBOTRON **********/
 
-#jumbotron img {
-    width: 100%;
-}
-#jumbo-container {
-    transform: translateY(80px);
-    width: var(--larger-column);
-    margin: auto;
-
-}
-#jumbo-container > div {margin: auto}
+#jumbo-container {    transform: translateY(100px);}
 
 #jumbotron {
     padding-top: 80px;
     background-color: #b4d0e7;
-    margin: auto;
 }
-#jumbotron #arrow {
-        position: absolute;
-        bottom: 90px;
-    }
-h1 {
-    margin: 0 auto 40px auto;
-    font-size: 5em;
+ #arrow {   bottom: 110px;    }
+
+/********** SCEGLI PIANO **********/
+
+/* radiobutton */
+
+input[type="radio"] {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    accent-color: var(--main-color);
 }
+#scegli-piano i {margin-right: 6px;}
+#scegli-piano .fa-check {color: var(--main-color);}
 
 
-/* SCEGLI PIANO */
-#scegli-piano {margin-top: 150px;}
+#partner, #business-op, #clienti {     margin: 150px auto; }
 
-/* checkbox */
+#container-loghi {    height: calc(100vw / 3);}
 
-#scegli-piano {
-    width: var(--main-column);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container-scheda {padding: var(--padding-schede);}
-
-#enterprise {
-    width:var(--main-column) ;
-}
-#partner { 
-    margin: 150px auto 150px auto;
-    width:var(--main-column) ;}
-#business-op {
-    margin: 150px auto 150px auto;
-    width: var(--main-column);
-
-}
-
-/* clienti business  */
-
-#clienti {
-    margin: 150px auto 150px auto;
-}
-#scopri-clienti {
-    width: var(--main-column);
-}
-#container-loghi {
-    margin-top: 150px;
-}
-.quadrati {
-
-}
 /* colori loghi  */
 
 #designit {
@@ -152,6 +125,7 @@ h1 {
 #clear-channel {background-color: #ffd830;}
 
 /* PROVA GRATUITA  */
+
 #banner-free h3 {
     color: #61082b;
 }
@@ -163,17 +137,18 @@ h1 {
     text-align: center;
     text-decoration: none;
 }
+#banner-free a:hover {color: grey;}
+
 /* FAQ */
 
 #faq h3 { padding-bottom: 30px;}
-
 
 .hide {
     height: 3em;
     margin-bottom: 10px;
     display: none;
 }
-
+#faq div {    transition: 0.3s;}
 .show:hover .hide, .hide:hover {
     display: block;
 }
@@ -182,9 +157,6 @@ h1 {
 }
 
 /* FOOTER  */
-#column-container p {
-
-}
 
 .footer-column {
     width: calc(100%/5 - 20px);
@@ -198,5 +170,5 @@ footer a {
     text-decoration: none;
     color: #ffffff;
     padding-bottom: 10px;
-    font-size: 12px;
+    display: block;
 }
