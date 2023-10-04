@@ -4,7 +4,7 @@ body {
 /* VARIABILI  */
 
 :root {
-    --main-column: 60%;
+    --main-column: 50%;
     --larger-column: 70%;
     --padding-schede: 25px;
     --main-color: #0061ff;
@@ -36,20 +36,25 @@ h4 {
 
 .blue-button {
     background-color: var(--main-color);
-    padding: 5px 15px;
+    padding: 1em 1em;
     color: #ffffff;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    font-weight: 600;
+
 }
 
 .white-button {
     background-color: #ffffff;
-    padding: 5px 15px;
-    border: black solid 1px;
+    padding: 1em 2em;
+    border: black solid 2px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    font-weight: 600;
+
+
 }
 
 /* hover bottoni  */
@@ -70,7 +75,10 @@ nav {
     }
 
     /* hover navbar */
-nav a {    border-bottom: #00000000 solid 2px;}
+nav a {
+    border-bottom: #00000000 solid 2px;
+    height: 100%;
+}
 nav a:hover {    border-bottom: #000000 solid 2px;    }
 
 nav a {
@@ -102,9 +110,9 @@ input[type="radio"] {
     margin-right: 0.5rem;
     accent-color: var(--main-color);
 }
+.button-height-fixer { height: 22em;}
 #scegli-piano i {margin-right: 6px;}
 #scegli-piano .fa-check {color: var(--main-color);}
-
 
 #partner, #business-op, #clienti {     margin: 150px auto; }
 
@@ -126,16 +134,17 @@ input[type="radio"] {
 
 /* PROVA GRATUITA  */
 
-#banner-free h3 {
+#banner-free h2 {
     color: #61082b;
 }
 #banner-free {background-color: #b4d0e7;}
 #banner-free a {
     background-color: whitesmoke;
-    padding: 5px 15px;
+    padding: 1em 2em;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    font-size: 1.25em;
 }
 #banner-free a:hover {color: grey;}
 
@@ -156,7 +165,7 @@ input[type="radio"] {
     transform:rotate(180deg)
 }
 
-/* FOOTER  */
+/********** FOOTER  **********/
 
 .footer-column {
     width: calc(100%/5 - 20px);
@@ -164,11 +173,32 @@ input[type="radio"] {
 
 #small-hr {
     width: 150px;
+    color: gray;
+    margin: 50px 0;
 }
 
 footer a {
     text-decoration: none;
     color: #ffffff;
     padding-bottom: 10px;
-    display: block;
+}
+/*****  lang selector ******/
+
+#lang-div {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    display: none;
+    margin-left: -3px;
+    color: gray;
+}
+#lang-div span {
+    padding:0 10px;
+}
+#show {display: inline-block;}
+#show:hover #lang-div, #lang-div:hover {display: inline-block;}
+#show:hover .fa-caret-up  {transform: rotate(90deg);}
+#lang-div span:hover {
+    text-decoration: underline;
+    font-weight: 600;
 }

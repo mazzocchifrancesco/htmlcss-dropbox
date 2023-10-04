@@ -26,9 +26,7 @@
 .flex-wrap { flex-wrap: wrap;} 
 .flex-self-start {align-self: start;}
 
-
-
-
+/* clearfix  */
 
 .clearfix::after {
     content: "";
@@ -68,7 +66,6 @@
 .px-6 { padding: 0 6px; }
 .py-6 { padding: 6px 0; }
 .pb-6 { padding-bottom: 6px; }
-
 .p-16 { padding: 16px; }
 .pt-16 { padding-top: 16px; }
 .pr-16 { padding-right: 16px; }
@@ -76,23 +73,14 @@
 .pl-16 { padding-left: 16px; }
 .py-16 { padding: 16px 0; }
 .px-16 { padding: 0 16px; }
-
 .py-20 { padding: 20px 0; }
-
-
 .p-25 { padding: 25px; }
 .p-35 { padding: 35px; }
-
-
-
 .py-35 { padding: 35px 0; }
 .pb-35 { padding-bottom: 35px; }
-
 .p-50 { padding: 50px; }
 .py-50 { padding: 50px 0; }
 .pb-50 { padding-bottom: 50px; }
-
-
 .p-64 { padding: 64px; }
 .pt-64 { padding-top: 64px; }
 .pr-64 { padding-right: 64px; }
@@ -100,7 +88,6 @@
 .pl-64 { padding-left: 64px; }
 .py-64 { padding: 64px 0; }
 .px-64 { padding: 0 64px; }
-
 .pt-100 { padding-top: 100px; }
 .py-100 { padding: 100px 0; }
 
@@ -195,19 +182,14 @@
 .mr-32 {margin-right: 32px;}
 .my-35 {margin: 35px 0;}
 .mb-40 {margin-bottom: 40px;}
-
 .my-50 {margin: 50px 0;}
 .mt-50 {margin-top: 50px;}
-
 .my-64 {margin: 64px 0;}
 .mb-64 {margin-bottom: 64px;}
-
 .mb-100 {margin-bottom: 100px;}
 .ml-6 {margin-left: 6px;}
 .mb-150 {margin-bottom: 150px;}
 .mt-150 {margin-top: 150px;}
-
-
 
 .mx-auto {
     margin-right: auto;
