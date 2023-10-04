@@ -6,6 +6,7 @@ body {font-family: 'Open Sans', sans-serif;}
     --main-column: 60%;
     --larger-column: 70%;
     --padding-schede: 25px;
+    --main-color: #0061ff;
 }
 
 /* classi variabili */
@@ -17,7 +18,7 @@ body {font-family: 'Open Sans', sans-serif;}
 /* BOTTONI  */
 
 .blue-button {
-    background-color: #0061ff;
+    background-color: var(--main-color);
     padding: 5px 15px;
     color: #ffffff;
     display: inline-block;
@@ -28,11 +29,18 @@ body {font-family: 'Open Sans', sans-serif;}
 .white-button {
     background-color: #ffffff;
     padding: 5px 15px;
-    border: #000000 solid 1px;
+    border: black solid 1px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
 }
+
+/* hover bottoni  */
+
+.blue-button:hover {background-color: #4084f3;}
+.white-button:hover {color: gray;}
+
+
 
 /* NAVBAR */
 
@@ -44,11 +52,11 @@ nav {
     width: 100%;
     z-index: 999;
     height: 5em;
-}
+    }
+nav a {    border-bottom: #00000000 solid 2px;}
 nav a:hover {
      /* border-bottom: solid grey 2px; */
-     box-shadow: inset 1px -5px 14px -4px #000000;
-    }
+    border-bottom: #000000 solid 2px;    }
 nav a {
     display: flex;
     align-items: center;
@@ -94,12 +102,8 @@ h1 {
 #scegli-piano {margin-top: 150px;}
 
 /* checkbox */
-#scegli-piano i {margin-right: 6px;}
 
-
-#scegli-piano span { margin-right: 15px;}
-#scegli-piano h2 {font-size: 35px;}
-#scegli-piano > * {
+#scegli-piano {
     width: var(--main-column);
     margin-right: auto;
     margin-left: auto;
@@ -130,7 +134,9 @@ h1 {
 #container-loghi {
     margin-top: 150px;
 }
+.quadrati {
 
+}
 /* colori loghi  */
 
 #designit {
@@ -160,8 +166,19 @@ h1 {
 /* FAQ */
 
 #faq h3 { padding-bottom: 30px;}
-#faq {
-    margin-bottom: 150px;   
+
+
+.hide {
+    height: 3em;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.show:hover .hide, .hide:hover {
+    display: block;
+}
+.show:hover .angle-turn, .hide:hover .angle-turn  {
+    transform:rotate(180deg)
 }
 
 /* FOOTER  */

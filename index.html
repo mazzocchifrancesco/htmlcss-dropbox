@@ -66,12 +66,14 @@
        <!--SEZIONE SCEGLI PIANO -->
 
        <section id="scegli-piano">
-            <h2 class="mb-64">Trova il piano business che fa per te</h2>
+            <h2 class="mb-64 fsize-35">Trova il piano business che fa per te</h2>
 
             <!-- checkbox -->
             <div>
-                <input type="radio" name="linguaggio" value="month" checked="checked"/><span>Fatturazione mensile</span>
-                <input type="radio" name="linguaggio" value="year"/><span> Fatturazione annuale </span>
+                <input type="radio" name="linguaggio" id="month" checked="checked"/>
+                <label for="month">Fatturazione mensile</label>
+                <input type="radio" name="linguaggio" id="year"/>
+                <label for="year">Fatturazione annuale</label>
             </div>
 
             <!--contenitore schede piano  -->
@@ -130,7 +132,7 @@
                         </div>
                         <div class="d-flex pb-16">
                             <p><i class="fas fa-folder"></i></p>
-                            <p class="lh-130">Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</p>
+                            <p class="lh-130">Tutto lo spazio di cui ha bisogno il tuo team</p>
                         </div>
                         <div class="d-flex pb-16">
                             <p><i class="fas fa-user"></i></p>
@@ -297,7 +299,7 @@
        <!-- CLIENTI  -->
 
        <section id="clienti">
-           <div id="scopri-clienti" class=" m-auto d-flex">
+           <div id="scopri-clienti" class=" mx-auto d-flex">
                <div class="w-70">
                    <h2 class="fsize-44 py-50">Più di 500.000 team utilizzano Dropbox Business</h2>
                    <a href="">scopri di più sui nostri clienti</a>
@@ -308,7 +310,7 @@
            <!-- container loghi  -->
            <div id="container-loghi" class="d-flex">
                <!-- colonna #1 -->
-               <div class="w-33 colonna-loghi d-flex flex-wrap">
+               <div class="vh-50 vw-33 colonna-loghi d-flex flex-wrap">
                    <div id="designit" class=" d-flex flex-items-center w-50 h-50">
                        <img src="img/designit.svg" class="w-100 svg-white pp-25" alt="designit">
                    </div>
@@ -323,16 +325,22 @@
                    </div>
                </div>
                <!-- colonna #2 -->
-               <div class="w-33 p-50 bg-whitesmok">
+               <div class="vh-50 vw-33 p-50 bg-whitesmok ofy-auto">
                    <div>
                        <img src="img/designit.svg" alt="designit" class="w-50">
                    </div>
                    <hr class="w-20 my-64">
                    <p>"l membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                   <p>"l membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                   <p>"l membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                   <p>"l membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                   <p>"l membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                   <p>"l membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+
                    <p class="my-64">Morten Thomsen, Global IT Lead</p>
                </div>
                <!-- colonna #3 -->
-               <div class="w-33 colonna-loghi d-flex flex-wrap">
+               <div class="vh-50 vw-33 colonna-loghi d-flex flex-wrap">
                    <div id="world-bicycle-relief" class=" d-flex flex-items-center w-50 h-50">
                        <img src="img/world_bicycle_relief.svg" class="w-100 svg-white pp-25" alt="world_bicycle_relief">
                    </div>
@@ -350,7 +358,7 @@
 
             <!-- inizia la prova gratuita  -->
             <div id="banner-free">
-               <div class="d-flex m-auto py-100 main-column">
+               <div class="d-flex mx-auto py-100 main-column">
                    <h3 class="w-50 fsize-35 we-700">Porta Dropbox Business nella tua azienda</h3>
                    <div class="w-50 text-right">
                        <a class="" href="#">inizia la prova gratuita</a>
@@ -361,23 +369,33 @@
         </section>
           
        <!-- DOMANDE FREQUENTI -->
-       <section id="faq" class=" m-auto main-column">
+       <section id="faq" class=" mx-auto main-column mb-150">
             <h3 class="w-50 fsize-35 we-700">Domande frequenti</h3>
             <hr>
-            <div class="d-flex flex-justify-between">
-                <p class="we-700 py-20 fsize-14">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
-                <div class="d-flex flex-items-center px-16"><i class="fas fa-angle-down"></i></div>
-            </div>            <hr>
-            <div class="d-flex flex-justify-between">
-                <p class="we-700 py-20 fsize-14">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
-                <div class="d-flex flex-items-center px-16"><i class="fas fa-angle-down"></i></div>
+            <div class="show">
+                <div class=" d-flex flex-justify-between">
+                    <p class="we-700 py-20 fsize-14">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                    <div class="angle-turn d-flex flex-items-center px-16"><i class="fas fa-angle-down"></i></div>
+                </div>
+                <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora aliquam sequi tempore? Illum nesciunt ab quam molestiae non a minus eum libero debitis in consectetur error deserunt, aliquid esse?</p>
+                <hr>
             </div>
-            <hr>
-            <div class="d-flex flex-justify-between">
-                <p class="we-700 py-20 fsize-14">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
-                <div class="d-flex flex-items-center px-16"><i class="fas fa-angle-down"></i></div>
+            <div class="show">
+                <div class=" d-flex flex-justify-between">
+                    <p class="we-700 py-20 fsize-14">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                    <div class="angle-turn d-flex flex-items-center px-16"><i class="fas fa-angle-down"></i></div>
+                </div>
+                <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora aliquam sequi tempore? Illum nesciunt ab quam molestiae non a minus eum libero debitis in consectetur error deserunt, aliquid esse?</p>
+                <hr>
             </div>
-            <hr>
+            <div class="show">
+                <div class=" d-flex flex-justify-between">
+                    <p class="we-700 py-20 fsize-14">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                    <div class="angle-turn d-flex flex-items-center px-16"><i class="fas fa-angle-down"></i></div>
+                </div>
+                <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora aliquam sequi tempore? Illum nesciunt ab quam molestiae non a minus eum libero debitis in consectetur error deserunt, aliquid esse?</p>
+                <hr>
+            </div>
        </section>
     </main>
 
@@ -385,7 +403,7 @@
     <footer class="bg-black">
 
         <!-- contenitore colonne  -->
-        <div id="column-container" class="d-flex flex-justify-between m-auto larger-column py-50">
+        <div id="column-container" class="d-flex flex-justify-between mx-auto larger-column py-50">
             <div class="footer-column d-flex flex-column">
                 <h4 class="pb-16 c-white">Dropbox</h4>
                 <a class="d-block" href="#">Applicazione desktop</a>
@@ -429,10 +447,10 @@
                 <a class="d-block" href="#">Funzioni</a>
             </div>
         </div>
-        <div class="larger-column m-auto">
+        <div class="larger-column mx-auto">
             <hr id="small-hr">
         </div>
-        <div class="m-auto c-grey py-50 larger-column fsize-12">
+        <div class="mx-auto c-grey py-50 larger-column fsize-12">
             <i class="fas fa-earth-europe p-4"></i> <span class="p-4">Italiano</span> <i class="p-4 fas fa-caret-up"></i>
         </div>
     </footer>
