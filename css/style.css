@@ -165,9 +165,7 @@ h1 {
 
 /* FOOTER  */
 #column-container p {
-    color: #ffffff;
-    padding-bottom: 10px;
-    font-size: 12px;
+
 }
 
 .footer-column {
@@ -176,4 +174,11 @@ h1 {
 
 #small-hr {
     width: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 12px;
 }
