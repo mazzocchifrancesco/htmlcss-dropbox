@@ -110,7 +110,6 @@ input[type="radio"] {
     margin-right: 0.5rem;
     accent-color: var(--main-color);
 }
-.button-height-fixer { height: 22em;}
 #scegli-piano i {margin-right: 6px;}
 #scegli-piano .fa-check {color: var(--main-color);}
 
@@ -153,7 +152,6 @@ input[type="radio"] {
 #faq h3 { padding-bottom: 30px;}
 
 .hide {
-    height: 3em;
     margin-bottom: 10px;
     display: none;
 }
@@ -195,7 +193,9 @@ footer a {
 #lang-div span {
     padding:0 10px;
 }
-#show {display: inline-block;}
+#show {
+    display: inline-block;
+}
 #show:hover #lang-div, #lang-div:hover {display: inline-block;}
 #show:hover .fa-caret-up  {transform: rotate(90deg);}
 #lang-div span:hover {
